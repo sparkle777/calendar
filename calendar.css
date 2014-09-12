@@ -40,7 +40,7 @@ li{
 	line-height: 50px;
 	text-align: center;
 	vertical-align: middle;
-	border: solid 1px black;
+	border: solid 1px gray;
 	font-size: normal;
 }
 
@@ -61,4 +61,14 @@ button {
 
 .workday {
 	color: green;
+}
+
+.today {
+	color: green;
+	font-size: 30px;
+	border: solid 1px green;
+}
+
+.normalDay {
+	background-color: white;
 }

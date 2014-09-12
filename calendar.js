@@ -3,7 +3,7 @@ var currentMonth;
 var calendarList;
 var selectedYear;
 var selectedMonth;
-
+var todayItem;
 
 window.onload = function() {
 	var now = new Date();
@@ -96,10 +96,20 @@ function showCalendarItem() {
 	var startWeekDay; // what day is it the first day of current month 
 	var startDate; // the date should be show at the first item
 	var daysOfCurrentMonth;
+	var now;
 
 	length = calendarList.length;
 	firstDateOfCurrentMonth = new Date(currentYear, currentMonth, 1);
 	startWeekDay = firstDateOfCurrentMonth.getDay();
+	now = new Date(); 
+
+	if (currentYear == now.getFullYear() && currentMonth == now.getMonth()) {
+		todayItem = startWeekDay + now.getDate() + 7 - 1;
+		calendarList[todayItem].className += "today";
+	}
+	else
+		calendarList[todayItem].className = "";
+
 	if (startWeekDay != 0) {
 		daysOfCurrentMonth = (new Date(currentYear, currentMonth, 0)).getDate();
 		startDate = daysOfCurrentMonth - startWeekDay + 1;
@@ -118,6 +128,7 @@ function showCalendarItem() {
 			daysOfCurrentMonth = (new Date(currentYear, currentMonth+1, 0)).getDate();
 		} 
 	}	
+
 }
 
 function showTime() {
