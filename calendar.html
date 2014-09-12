@@ -12,66 +12,74 @@
 		<div id="head">
 			<div id="times" class="headItem"></div>
 			<form class="headItem" onchange="changeYear()">
-				<select name="year" id="years"></select>
+				<label for="years">年份：</label>
+				<select name="year" id="years" size="1"></select>
 			</form> 
 			<form  class="headItem" onchange="changeMonth()">
-				<select name="month" id="months"></select>
+				<label for="months">月份：</label>
+				<select name="month" id="months" size="1"></select>
 			</form>
-			<div class="headItem" id="today">
-				<button>返回今天</button>
+			<div class="headItem">
+				<button onclick="backToToday()">返回今天</button>
 			</div>
 		</div>
 		<div id="calendarList">
 			<ul >
-				<li>Sunday</li>
-				<li>Monday</li>
-				<li>Tuesday</li>
-				<li>Wednesday</li>
-				<li>Thursday</li>
-				<li>Friday</li>
-				<li>Saturday</li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
-				<li class="date"></li>
+				<li class="weekend">Sunday</li>
+				<li class="workday">Monday</li>
+				<li class="workday">Tuesday</li>
+				<li class="workday">Wednesday</li>
+				<li class="workday">Thursday</li>
+				<li class="workday">Friday</li>
+				<li class="weekend">Saturday</li>
+
+				<li class="weekend"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li class="weekend"></li>
+
+				<li class="weekend"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li class="weekend"></li>
+
+				<li class="weekend"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li class="weekend"></li>
+
+				<li class="weekend"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li class="weekend"></li>
+
+				<li class="weekend"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li class="weekend"></li>
+
+				<li class="weekend"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li class="weekend"></li>
 			</ul>	
 		</div>
 	</div>

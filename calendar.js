@@ -57,10 +57,6 @@ function initialCalendar() {
 	}
 
 	initialCalendarItem();
-
-	// 添加event监听器
-	returnToday = document.getElementById("today");
-	returnToday.addEventListener("click", backToToday);
 }
 
 // 初始化日历项
@@ -157,6 +153,13 @@ function backToToday() {
 
 	currentYear = now.getFullYear();
 	currentMonth = now.getMonth(); //0表示1月，11表示12月
+
+	selectedYear.options[selectedYear.options.length-100].selected = "selected";
+
+	for (var month = 1; month < 13; month++) {
+		if (month == currentMonth+1)
+			selectedMonth.options[month-1].selected = "selected";
+	}
 
 	showCalendarItem();
 }
