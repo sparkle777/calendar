@@ -1,8 +1,26 @@
+#overall {
+	width: 700px;
+	height: 400px;
+	margin: auto;
+	margin-top: 100px;
+}
+
+#head {
+	height: 50px;
+	width:  700px;
+	margin-bottom: 0;
+	position: relative;
+}
+
 #calendarList{
 	position: relative;
-	width: 700px;
+	margin: 0;
 	height: 350px;
-	margin: auto;
+	width: 700px;
+}
+
+ul {
+	margin: 0;
 }
 
 li {
@@ -18,4 +36,13 @@ li {
 	vertical-align: middle;
 	border: solid 1px black;
 	font-size: normal;
+}
+
+#head div {
+	position: absolute;;
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	vertical-align: middle;
 }
