@@ -22,6 +22,7 @@ function initialCalendar() {
 	var headItem;
 	var startYear;
 	var endYear;
+	var returnToday;
 
 	left_pos = 0;
 	top_pos = 0;
@@ -56,6 +57,10 @@ function initialCalendar() {
 	}
 
 	initialCalendarItem();
+
+	// 添加event监听器
+	returnToday = document.getElementById("today");
+	returnToday.addEventListener("click", backToToday);
 }
 
 // 初始化日历项
@@ -147,6 +152,14 @@ function changeMonth() {
 	showCalendarItem();
 }
 
+function backToToday() {
+	var now = new Date();
+
+	currentYear = now.getFullYear();
+	currentMonth = now.getMonth(); //0表示1月，11表示12月
+
+	showCalendarItem();
+}
 
 
 
